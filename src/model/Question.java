@@ -1,6 +1,6 @@
 package model;
 
-// Generated 18-feb-2015 17:44:27 by Hibernate Tools 3.4.0.CR1
+// Generated 19-feb-2015 16:15:28 by Hibernate Tools 3.4.0.CR1
 
 import java.util.HashSet;
 import java.util.Set;
@@ -10,10 +10,6 @@ import java.util.Set;
  */
 public class Question implements java.io.Serializable {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	private int idQuestion;
 	private String text;
 	private String category;
@@ -26,7 +22,7 @@ public class Question implements java.io.Serializable {
 		this.idQuestion = idQuestion;
 	}
 
-	public Question(int idQuestion, String text, String category, Set<?> answers) {
+	public Question(int idQuestion, String text, String category, Set answers) {
 		this.idQuestion = idQuestion;
 		this.text = text;
 		this.category = category;
@@ -57,11 +53,11 @@ public class Question implements java.io.Serializable {
 		this.category = category;
 	}
 
-	public Set<?> getAnswers() {
+	public Set getAnswers() {
 		return this.answers;
 	}
 
-	public void setAnswers(Set<?> answers) {
+	public void setAnswers(Set answers) {
 		this.answers = answers;
 	}
 
